@@ -27,6 +27,7 @@ func (p *Plugin) Run() error {
 
 func main() {
 	plugin := NewPlugin()
+
 	if err := plugin.Run(); err != nil {
 		log.Printf("Plugin error: %v\n", err)
 		os.Exit(1)
